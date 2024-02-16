@@ -1,3 +1,7 @@
-# [SketchyBar](https://github.com/FelixKratz/SketchyBar) is a highly customisable plugin
+# [SketchyBar](https://github.com/FelixKratz/SketchyBar)
 
-This is my sketchybar configuration, please feel free to clone to try out.
+Sketchybar is a highly customisable tool for MacOS, acting as a replacement for the default system menu bar, it's very versatile and I'm starting to try it out recently. Here you can find my configuration files mainly written in shell.
+
+Please feel free to clone if you want to try it out for yourself.
+
+![Showcase](./images/Showcase 202402.png)
