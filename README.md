@@ -4,4 +4,4 @@ Sketchybar is a highly customisable tool for MacOS, acting as a replacement for 
 
 Please feel free to clone if you want to try it out for yourself.
 
-![Showcase](./images/Showcase 202402.png)
+![Showcase](./images/Showcase202402.png)
