@@ -21,10 +21,10 @@ music=(
 	label.max_chars=20
 	updates=on
 	--subscribe music media_change
-	--subscribe music mouse.entered
-	mouse.clicked
-	mouse.exited
-	mouse.exited.global
+	# --subscribe music mouse.entered
+	# mouse.clicked
+	# mouse.exited
+	# mouse.exited.global
 )
 
 sketchybar \

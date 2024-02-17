@@ -79,13 +79,13 @@ case "$SENDER" in
 "routine" | "forced" | "media_change")
   update
   ;;
-"mouse.entered")
-  popup on
-  ;;
-"mouse.exited" | "mouse.exited.global")
-  popup off
-  ;;
-"mouse.clicked")
-  playpause
-  ;;
+# "mouse.entered")
+#   popup on
+#   ;;
+# "mouse.exited" | "mouse.exited.global")
+#   popup off
+#   ;;
+# "mouse.clicked")
+#   playpause
+#   ;;
 esac
