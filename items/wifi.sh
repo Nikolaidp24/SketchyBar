@@ -1,4 +1,5 @@
 #!/bin/bash
+
 sketchybar --add alias "Control Center,WiFi" right \
 	--rename "Control Center,WiFi" wifi_alias \
 	--set wifi_alias icon.drawing=on \
@@ -8,4 +9,5 @@ sketchybar --add alias "Control Center,WiFi" right \
 	background.padding_right=0 \
 	background.padding_left=0 \
 	width=28
+# click_script="$PLUGIN_DIR/wifi.sh"
 # align=right
