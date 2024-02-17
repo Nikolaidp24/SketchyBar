@@ -4,8 +4,10 @@ source "$CONFIG_DIR/colors.sh" # Loads all defined colors
 source "$CONFIG_DIR/icons.sh"  # Loads all defined icons
 FONT="SF Pro"
 network_down=(
-	background.padding_left=20
-	background.highlight.padding_left=20
+	padding_left=20
+	highlight.padding_left=20
+	# background.padding_left=7
+	# background.highlight.padding_left=7
 	y_offset=-7
 	label.font="$FONT:Heavy:10.0"
 	label.color="$WHITE"
@@ -16,7 +18,8 @@ network_down=(
 )
 
 network_up=(
-	background.padding_left=-77
+	padding_left=-77
+	# background.highlight.padding_left=7
 	y_offset=7
 	label.font="$FONT:Heavy:10.0"
 	label.color="$WHITE"
