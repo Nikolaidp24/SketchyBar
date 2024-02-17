@@ -8,6 +8,7 @@ brew=(
 	label="Brew"
 	icon.color=$BLUE
 	padding_right=10
+	padding_left=0
 	# updates=on
 	# update_freq=120
 	script="$PLUGIN_DIR/brew.sh"

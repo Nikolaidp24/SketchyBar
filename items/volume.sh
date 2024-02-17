@@ -10,7 +10,7 @@ sketchybar --add alias "Control Center,Sound" right \
 	alias.color=$WHITE \
 	background.padding_right=0 \
 	background.padding_left=0 \
-	width=35 \
-	align=right
+	width=35
+# align=right
 # sketchybar --add bracket status brew github.bell wifi volume_alias battery \
 # 	--set status "${status_bracket[@]}"
