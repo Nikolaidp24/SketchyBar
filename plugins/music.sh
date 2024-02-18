@@ -74,18 +74,18 @@ playpause() {
   osascript -e 'tell application "Music" to playpause'
 }
   
-
-case "$SENDER" in
-"routine" | "forced" | "media_change")
-  update
-  ;;
-# "mouse.entered")
-#   popup on
+update
+# case "$SENDER" in
+# "routine" | "forced" | "media_change")
+#   update
 #   ;;
-# "mouse.exited" | "mouse.exited.global")
-#   popup off
-#   ;;
-# "mouse.clicked")
-#   playpause
-#   ;;
-esac
+# # "mouse.entered")
+# #   popup on
+# #   ;;
+# # "mouse.exited" | "mouse.exited.global")
+# #   popup off
+# #   ;;
+# # "mouse.clicked")
+# #   playpause
+# #   ;;
+# esac

@@ -21,7 +21,7 @@ music=(
 	icon.padding_left=32
 	label.max_chars=20
 	updates=on
-	--subscribe music media_change
+	--subscribe music media_change system_woke
 	# --subscribe music mouse.entered
 	# mouse.clicked
 	# mouse.exited
