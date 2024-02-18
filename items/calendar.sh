@@ -11,7 +11,7 @@ calendar=(
 	padding_left=15
 	update_freq=30
 	script="$PLUGIN_DIR/calendar.sh"
-	click_script="$PLUGIN_DIR/zen.sh"
+	# click_script="$PLUGIN_DIR/calendar_click.sh"
 	background.color="$BACKGROUND_1"
 	background.border_color="$BACKGROUND_2"
 )
