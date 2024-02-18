@@ -46,4 +46,5 @@ sketchybar --add alias "iStat Menus Status,com.bjango.istatmenus.network" left \
 	label.drawing=off \
 	background.padding_right=0 \
 	background.padding_left=0 \
-	width=35
+	width=35 \
+	alias.color="$WHITE"
