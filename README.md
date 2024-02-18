@@ -8,15 +8,19 @@ Please feel free to clone if you want to try it out for yourself.
 
 ![Showcase](./images/Showcase202402.png)
 
-### Requirements:
+### Requirements
 
 - [Homebrew](https://brew.sh)
 - jq -> `brew install jq`
 - Istat Menus -> `brew install --cask istat-menus`
 - yabai -> `brew install yabai` - _optional_
 - skhd (yabai keybindings) -> `brew install skhd` - _optional_
-- [PandaFan](https://pandafan.zone) -> (Best **_paid_** VPN to use in China) - _This is purely a shoutout_
+- [PandaFan](https://pandafan.zone) -> (Best _*paid*_ VPN to use in China) - _This is purely a shout out_
 
 ### [Install](https://felixkratz.github.io/SketchyBar/setup)
 
 - There is already a pretty detailed guide on how to install SketchyBar and its required dependencies, so please follow that.
+
+### Tips
+
+- For the music plugin, because I mostly use Apple Music and Youtube Music (_I know I know_), and luckily this plugin works for both. However, if you are like me, and have some personally imported music in apple music, and would still like to see the music info when it's playing, you can add the artist/album/title in the Music.app by clicking on a title and press Command+i to edit manually.
