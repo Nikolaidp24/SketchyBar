@@ -12,8 +12,8 @@ PADDINGS=3    # All paddings use this value (icon, label, background)
 # Setting up and starting the helper process
 HELPER=git.felix.helper
 killall helper
-(cd $CONFIG_DIR/helper && make)
-$CONFIG_DIR/helper/helper $HELPER >/dev/null 2>&1 &
+(cd "$CONFIG_DIR"/helper && make)
+"$CONFIG_DIR"/helper/helper $HELPER >/dev/null 2>&1 &
 
 # Unload the macOS on screen indicator overlay for volume change
 launchctl unload -F /System/Library/LaunchAgents/com.apple.OSDUIHelper.plist >/dev/null 2>&1 &
@@ -21,9 +21,9 @@ launchctl unload -F /System/Library/LaunchAgents/com.apple.OSDUIHelper.plist >/d
 # Setting up the general bar appearance of the bar
 bar=(
 	height=45
-	color=$TRANSPARENT
+	color="$TRANSPARENT"
 	border_width=2
-	border_color=$TRANSPARENT
+	border_color="$TRANSPARENT"
 	shadow=off
 	position=top
 	sticky=on
@@ -40,22 +40,22 @@ sketchybar --bar "${bar[@]}"
 defaults=(
 	updates=when_shown
 	icon.font="$FONT:Bold:14.0"
-	icon.color=$ICON_COLOR
-	icon.padding_left=$PADDINGS
-	icon.padding_right=$PADDINGS
+	icon.color="$ICON_COLOR"
+	icon.padding_left="$PADDINGS"
+	icon.padding_right="$PADDINGS"
 	label.font="$FONT:Semibold:13.0"
-	label.color=$LABEL_COLOR
-	label.padding_left=$PADDINGS
-	label.padding_right=$PADDINGS
-	padding_right=$PADDINGS
-	padding_left=$PADDINGS
+	label.color="$LABEL_COLOR"
+	label.padding_left="$PADDINGS"
+	label.padding_right="$PADDINGS"
+	padding_right="$PADDINGS"
+	padding_left="$PADDINGS"
 	background.height=26
 	background.corner_radius=9
 	background.border_width=2
 	popup.background.border_width=2
 	popup.background.corner_radius=9
-	popup.background.border_color=$POPUP_BORDER_COLOR
-	popup.background.color=$POPUP_BACKGROUND_COLOR
+	popup.background.border_color="$POPUP_BORDER_COLOR"
+	popup.background.color="$POPUP_BACKGROUND_COLOR"
 	popup.blur_radius=20
 	popup.background.shadow.drawing=on
 	scroll_texts=on

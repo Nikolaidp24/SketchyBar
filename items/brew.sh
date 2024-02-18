@@ -6,7 +6,7 @@
 brew=(
 	icon=􀐛
 	label="Brew"
-	icon.color=$BLUE
+	icon.color="$BLUE"
 	padding_right=10
 	padding_left=0
 	# updates=on

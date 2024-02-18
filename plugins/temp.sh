@@ -6,4 +6,4 @@ TEMP=$(/usr/local/bin/smctemp -c)
 # 	exit 1
 # fi
 
-sketchybar --set temp label=" ${TEMP}󰔄"
+sketchybar --set temp label=" ${TEMP}°C"

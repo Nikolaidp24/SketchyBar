@@ -26,7 +26,7 @@ window_state() {
 		COLOR=$MAGENTA
 	fi
 
-	args=(--bar border_color=$COLOR --animate sin 10 --set $NAME icon.color=$COLOR)
+	args=(--bar border_color="$COLOR" -animate sin 10 --set "$NAME" icon.color="$COLOR")
 
 	[ -z "$LABEL" ] && args+=(label.width=0) ||
 		args+=(label="$LABEL" label.width=40)

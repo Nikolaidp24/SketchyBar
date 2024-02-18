@@ -10,9 +10,9 @@
 check_bluetooth_headphone() {
 	DEVICES=$(system_profiler SPBluetoothDataType -json -detailLevel basic 2>/dev/null | jq '.SPBluetoothDataType[0].device_connected[]? | select( .[] | .device_minorType == "Headset") | keys[]')
 	if [ "$DEVICES" = "" ]; then
-		sketchybar --set $NAME icon.drawing=off
+		sketchybar --set "$NAME" icon.drawing=off
 	else
-		sketchybar --set $NAME label="" icon.drawing=on background.padding_left=1 background.padding_right=4
+		sketchybar --set "$NAME" label="" icon.drawing=on background.padding_left=1 background.padding_right=4
 	fi
 }
 

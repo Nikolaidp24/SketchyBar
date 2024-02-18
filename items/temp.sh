@@ -3,7 +3,7 @@
 temp=(
 	script="$PLUGIN_DIR/temp.sh"
 	icon=􀇬
-	icon.color=$WHITE
+	icon.color="$WHITE"
 	icon.font="$FONT:Regular:19.0"
 	icon.padding_right=0
 	padding_right=0
