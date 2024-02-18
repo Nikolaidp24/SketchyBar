@@ -70,6 +70,7 @@ source "$ITEM_DIR/yabai.sh"
 source "$ITEM_DIR/front_app.sh"
 source "$ITEM_DIR/network.sh"
 source "$ITEM_DIR/temp.sh"
+source "$ITEM_DIR/weather.sh"
 # source "$ITEM_DIR/notion.sh"
 # Center
 # source "$ITEM_DIR/spotify.sh"
