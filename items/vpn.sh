@@ -6,4 +6,4 @@ sketchybar --add alias "PandaFan,Item-0" right \
 	alias.color="$WHITE" \
 	background.padding_right=0 \
 	background.padding_left=0 \
-	width=25 # alias.color=$MAGENTA \
+	width=25
