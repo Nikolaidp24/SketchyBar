@@ -15,9 +15,9 @@ Please feel free to clone if you want to try it out for yourself.
 - [Homebrew](https://brew.sh)
 - jq -> `brew install jq`
 - Istat Menus -> `brew install --cask istat-menus`
+- smctemp -> `brew install smctemp`
 - yabai -> `brew install yabai` - _optional_
 - skhd (yabai keybindings) -> `brew install skhd` - _optional_
-- [PandaFan](https://pandafan.zone) -> (Best _*paid*_ VPN to use in China) - _This is purely a shout out_
 
 ### [Install](https://felixkratz.github.io/SketchyBar/setup)
 
