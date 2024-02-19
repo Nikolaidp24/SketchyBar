@@ -1,4 +1,5 @@
 #!/bin/bash
+
 sketchybar --add alias "PandaFan,Item-0" right \
 	--rename "PandaFan,Item-0" vpn_alias \
 	--set vpn_alias icon.drawing=on \
@@ -6,4 +7,5 @@ sketchybar --add alias "PandaFan,Item-0" right \
 	alias.color="$WHITE" \
 	background.padding_right=0 \
 	background.padding_left=0 \
-	width=25
+	width=25 \
+	click_script="cd;open '/Applications/PandaFan.app'"

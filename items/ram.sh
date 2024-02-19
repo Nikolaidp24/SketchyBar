@@ -14,7 +14,7 @@ sketchybar --add alias "iStat Menus Status,com.bjango.istatmenus.memory" left \
 	background.padding_left=0 \
 	width=35 \
 	padding_right=10 \
-	padding_left=35 \
+	padding_left=45 \
 	alias.color="$WHITE"
 
 sketchybar --add bracket stats temp network_alias ram_alias \
