@@ -3,7 +3,7 @@
 source "$CONFIG_DIR/colors.sh"
 
 COUNT="$(brew outdated | wc -l | tr -d ' ')"
-
+sleep 5
 COLOR=$RED
 
 case "$COUNT" in
@@ -22,4 +22,4 @@ case "$COUNT" in
 	;;
 esac
 
-sketchybar --set "$NAME" label="$COUNT" icon.color="$COLOR"
+sketchybar --set "$NAME" label="$COUNT" icon.color="$COLOR" label.color="$COLOR"

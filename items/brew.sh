@@ -5,12 +5,11 @@
 
 brew=(
 	icon=􀐛
-	label="Brew"
+	label=Brew
+	# label.font="OperatorMono Nerd Font:Bold Italic:14.0"
 	icon.color="$BLUE"
 	padding_right=10
 	padding_left=0
-	# updates=on
-	# update_freq=120
 	script="$PLUGIN_DIR/brew.sh"
 )
 
