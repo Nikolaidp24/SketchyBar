@@ -17,9 +17,11 @@ window_state() {
 	elif [ "$(echo "$SPACE" | jq '.["type"]' | cut -d'"' -f 2)" = "float" ]; then
 		ICON+=$YABAI_FLOAT
 		COLOR=$RED
+		# LABEL="float"
 	elif [ "$(echo "$SPACE" | jq '.["type"]' | cut -d'"' -f 2)" = "bsp" ]; then
 		ICON+=$YABAI_GRID
 		COLOR=$BLUE
+		# LABEL="bsp"
 	elif [[ $STACK_INDEX -gt 0 ]]; then
 		LAST_STACK_INDEX=$(yabai -m query --windows --window stack.last | jq '.["stack-index"]')
 		ICON+=$YABAI_STACK
@@ -30,7 +32,12 @@ window_state() {
 	args=(--set "$NAME" icon.color="$COLOR")
 
 	[ -z "$LABEL" ] && args+=(label.width=0) ||
-		args+=(label="$LABEL" label.width=40)
+		args+=(label="$LABEL"
+			label.width=40
+			label.color="$COLOR"
+			label.font.size=12.0
+			label.y_offset=5
+			label.padding_left=-1)
 
 	[ -z "$ICON" ] && args+=(icon.width=0) ||
 		args+=(icon="$ICON" icon.width=30)

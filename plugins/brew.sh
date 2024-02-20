@@ -14,7 +14,7 @@ case "$COUNT" in
 	COLOR=$YELLOW
 	;;
 [1-9])
-	COLOR=$WHITE
+	COLOR=$BLUE
 	;;
 0)
 	COLOR=$GREEN
