@@ -4,6 +4,7 @@ window_state() {
 	source "$CONFIG_DIR/colors.sh"
 	source "$CONFIG_DIR/icons.sh"
 
+	SPACE=$(yabai -m query --spaces --space)
 	WINDOW=$(yabai -m query --windows --window)
 	STACK_INDEX=$(echo "$WINDOW" | jq '.["stack-index"]')
 
@@ -13,11 +14,11 @@ window_state() {
 	if [ "$(echo "$WINDOW" | jq '.["is-floating"]')" = "true" ]; then
 		ICON+=$YABAI_FLOAT
 		COLOR=$RED
-	elif [ "$(echo "$WINDOW" | jq '.["has-fullscreen-zoom"]')" = "true" ]; then
-		ICON+=$YABAI_FULLSCREEN_ZOOM
-		COLOR=$GREEN
-	elif [ "$(echo "$WINDOW" | jq '.["has-parent-zoom"]')" = "true" ]; then
-		ICON+=$YABAI_PARENT_ZOOM
+	elif [ "$(echo "$SPACE" | jq '.["type"]' | cut -d'"' -f 2)" = "float" ]; then
+		ICON+=$YABAI_FLOAT
+		COLOR=$RED
+	elif [ "$(echo "$SPACE" | jq '.["type"]' | cut -d'"' -f 2)" = "bsp" ]; then
+		ICON+=$YABAI_GRID
 		COLOR=$BLUE
 	elif [[ $STACK_INDEX -gt 0 ]]; then
 		LAST_STACK_INDEX=$(yabai -m query --windows --window stack.last | jq '.["stack-index"]')
@@ -26,7 +27,7 @@ window_state() {
 		COLOR=$MAGENTA
 	fi
 
-	args=(--bar border_color="$COLOR" -animate sin 10 --set "$NAME" icon.color="$COLOR")
+	args=(--set "$NAME" icon.color="$COLOR")
 
 	[ -z "$LABEL" ] && args+=(label.width=0) ||
 		args+=(label="$LABEL" label.width=40)
@@ -37,16 +38,4 @@ window_state() {
 	sketchybar -m "${args[@]}"
 }
 
-mouse_clicked() {
-	yabai -m window --toggle float
-	window_state
-}
-
-case "$SENDER" in
-"mouse.clicked")
-	mouse_clicked
-	;;
-"window_focus")
-	window_state
-	;;
-esac
+window_state

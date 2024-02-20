@@ -1,15 +1,20 @@
 #!/bin/bash
 
 yabai=(
-  icon.width=0
-  label.width=0
-  script="$PLUGIN_DIR/yabai.sh"
-  icon.font="$FONT:Bold:16.0"
-  display=active
+	icon.width=0
+	label.width=0
+	script="$PLUGIN_DIR/yabai.sh"
+	icon.font="$FONT:Bold:16.0"
+	display=active
+	padding_right=20
 )
 
-sketchybar --add event window_focus            \
-           --add item yabai left               \
-           --set yabai "${yabai[@]}"           \
-           --subscribe yabai window_focus      \
-                             mouse.clicked
+sketchybar --add event layout_changed \
+	--add event window_focus \
+	--add event temp_float_toggle \
+	--add item yabai left \
+	--set yabai "${yabai[@]}" \
+	--subscribe yabai space_change \
+	layout_changed \
+	window_focus \
+	temp_float_toggle
