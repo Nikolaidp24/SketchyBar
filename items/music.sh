@@ -5,7 +5,6 @@ source "$CONFIG_DIR/globalstyles.sh"
 
 music=(
 	script="$PLUGIN_DIR/music.sh"
-	padding_left=0
 	label.padding_right="$PADDINGS"
 	label.font="OperatorMono Nerd Font:Book Italic:15.0"
 	padding_right="$PADDINGS" * 2
@@ -19,6 +18,8 @@ music=(
 	background.color="$TRANSPARENT"
 	icon.padding_left=32
 	label.max_chars=15
+	label.align=left
+	label.width=150
 	--subscribe music media_change system_woke
 	# --subscribe music mouse.entered
 	# mouse.clicked
