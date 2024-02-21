@@ -12,19 +12,19 @@ window_state() {
 	ICON=""
 
 	if [ "$(echo "$WINDOW" | jq '.["is-floating"]')" = "true" ]; then
-		ICON+=$YABAI_FLOAT
+		ICON=$YABAI_FLOAT
 		COLOR=$RED
 	elif [ "$(echo "$SPACE" | jq '.["type"]' | cut -d'"' -f 2)" = "float" ]; then
-		ICON+=$YABAI_FLOAT
+		ICON=$YABAI_FLOAT
 		COLOR=$RED
 		# LABEL="float"
 	elif [ "$(echo "$SPACE" | jq '.["type"]' | cut -d'"' -f 2)" = "bsp" ]; then
-		ICON+=$YABAI_GRID
+		ICON=$YABAI_GRID
 		COLOR=$BLUE
 		# LABEL="bsp"
 	elif [[ $STACK_INDEX -gt 0 ]]; then
 		LAST_STACK_INDEX=$(yabai -m query --windows --window stack.last | jq '.["stack-index"]')
-		ICON+=$YABAI_STACK
+		ICON=$YABAI_STACK
 		LABEL="$(printf "[%s/%s]" "$STACK_INDEX" "$LAST_STACK_INDEX")"
 		COLOR=$MAGENTA
 	fi
