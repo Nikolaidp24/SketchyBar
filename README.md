@@ -16,8 +16,8 @@ Please feel free to clone if you want to try it out for yourself.
 - jq -> `brew install jq`
 - Istat Menus -> `brew install --cask istat-menus`
 - smctemp -> `brew install smctemp`
-- yabai -> `brew install yabai` - _optional_
-- skhd (yabai keybindings) -> `brew install skhd` - _optional_
+- [yabai](https://github.com/koekeishiya/yabai) -> `brew install yabai` - _optional_
+- [skhd](https://github.com/koekeishiya/skhd) (yabai keybindings) -> `brew install skhd` - _optional_
 
 ### [Install](https://felixkratz.github.io/SketchyBar/setup)
 

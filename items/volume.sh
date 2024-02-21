@@ -1,8 +1,5 @@
 #!/bin/bash
-# status_bracket=(
-# 	background.color=$BACKGROUND_1
-# 	background.border_color=$BACKGROUND_2
-# )
+
 sketchybar --add alias "Control Center,Sound" right \
 	--rename "Control Center,Sound" volume_alias \
 	--set volume_alias icon.drawing=off \
