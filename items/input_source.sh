@@ -8,4 +8,4 @@ sketchybar --add alias "TextInputMenuAgent,Item-0" right \
 	background.padding_right=0 \
 	background.padding_left=0 \
 	width=35 \
-	--subscribe input_alias input_change
+	--subscribe input_alias input_change system_woke

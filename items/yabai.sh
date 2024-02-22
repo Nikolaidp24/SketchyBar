@@ -17,4 +17,5 @@ sketchybar --add event layout_changed \
 	--subscribe yabai space_change \
 	layout_changed \
 	window_focus \
-	temp_float_toggle
+	temp_float_toggle \
+	system_woke
