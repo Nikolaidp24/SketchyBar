@@ -24,7 +24,7 @@ for i in "${!SPACE_ICONS[@]}"; do
 		label.font="sketchybar-app-font:Regular:16.0"
 		label.y_offset=-1
 		background.color="$BACKGROUND_1"
-		background.border_color="$BACKGROUND_2"
+		background.border_color="$TRANSPARENT"
 		script="$PLUGIN_DIR/space.sh"
 	)
 

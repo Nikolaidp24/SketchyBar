@@ -13,7 +13,8 @@ calendar=(
 	script="$PLUGIN_DIR/calendar.sh"
 	# click_script="$PLUGIN_DIR/calendar_click.sh"
 	background.color="$BACKGROUND_1"
-	background.border_color="$BACKGROUND_2"
+	background.border_color="$TRANSPARENT"
+	background.height=30
 )
 
 sketchybar --add item calendar right \

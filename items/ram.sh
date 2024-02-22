@@ -2,7 +2,8 @@
 
 stats_bracket=(
 	background.color="$BACKGROUND_1"
-	background.border_color="$BACKGROUND_2"
+	background.border_color="$TRANSPARENT"
+	background.height=30
 	padding_left=20
 )
 

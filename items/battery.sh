@@ -12,8 +12,9 @@ battery=(
 )
 status_bracket=(
 	background.color="$BACKGROUND_1"
-	background.border_color="$BACKGROUND_2"
+	background.border_color="$TRANSPARENT"
 	background.border_width=2
+	background.height=30
 )
 sketchybar --add item battery right \
 	--set battery "${battery[@]}" \

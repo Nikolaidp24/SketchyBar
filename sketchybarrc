@@ -29,7 +29,7 @@ bar=(
 	sticky=on
 	padding_right=10
 	padding_left=10
-	y_offset=-5
+	y_offset=0
 	margin=-2
 	topmost=window
 )
@@ -58,7 +58,7 @@ defaults=(
 	popup.background.color="$POPUP_BACKGROUND_COLOR"
 	popup.blur_radius=20
 	popup.background.shadow.drawing=on
-	scroll_texts=on
+	scroll_texts=off
 )
 
 sketchybar --default "${defaults[@]}"
