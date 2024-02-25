@@ -164,7 +164,7 @@ function icon_map() {
 	"Discord" | "Discord Canary" | "Discord PTB")
 		icon_result=":discord:"
 		;;
-	"Neovide" | "MacVim" | "Vim" | "VimR")
+	"MacVim" | "Vim" | "VimR")
 		icon_result=":vim:"
 		;;
 	"Keynote" | "Keynote 讲演")
