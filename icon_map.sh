@@ -383,6 +383,9 @@ function icon_map() {
 	"Sketch")
 		icon_result=":sketch:"
 		;;
+	"Steam" | "Steam Helper")
+		icon_result=":steam:"
+		;;
 	"Skype")
 		icon_result=":skype:"
 		;;
