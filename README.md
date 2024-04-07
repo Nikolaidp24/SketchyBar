@@ -8,7 +8,7 @@ My setup as of right now is basically a merge of all the wonderful plugins that 
 
 Please feel free to clone if you want to try it out for yourself.
 
-![Showcase](./images/Showcase202402.png)
+![Showcase](./images/Showcase202404.png)
 
 ### Requirements
 
