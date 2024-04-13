@@ -9,15 +9,15 @@ music=(
 	# drawing=off
 	label="Loading…"
 	scroll_texts=false
-	background.image=media.artwork
-	background.image.scale=0.9
-	background.image.corner_radius=8
-	background.image.border_color="$TRANSPARENT"
-	background.color="$TRANSPARENT"
+	# background.image=media.artwork
+	# background.image.scale=0.9
+	# background.image.corner_radius=8
+	# background.image.border_color="$TRANSPARENT"
+	# background.color="$TRANSPARENT"
 	icon.padding_left=36
 	label.max_chars=15
 	label.align=left
-	label.width=150
+	label.width=130
 	--subscribe music media_change system_woke
 	# --subscribe music mouse.entered
 	# mouse.clicked

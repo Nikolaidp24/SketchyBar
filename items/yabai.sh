@@ -6,7 +6,7 @@ yabai=(
 	script="$PLUGIN_DIR/yabai.sh"
 	icon.font="$FONT:Bold:16.0"
 	display=active
-	padding_right=20
+	padding_right=10
 )
 
 sketchybar --add event layout_changed \
