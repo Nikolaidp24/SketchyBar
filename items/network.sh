@@ -40,11 +40,19 @@
 # 	--set network.down "${network_down[@]}" \
 # 	--add item network.up left \
 # 	--set network.up "${network_up[@]}"
-sketchybar --add alias "iStat Menus Status,com.bjango.istatmenus.network" left \
-	--rename "iStat Menus Status,com.bjango.istatmenus.network" network_alias \
-	--set network_alias icon.drawing=off \
-	label.drawing=off \
-	background.padding_right=0 \
-	background.padding_left=0 \
-	width=35 \
-	alias.color="$WHITE"
+stats_bracket=(
+  background.color="$BACKGROUND_1"
+  background.border_color="$TRANSPARENT"
+  background.height=30
+  padding_left=20
+)
+sketchybar --add alias "iStat Menus Menubar,com.bjango.istatmenus.network" left \
+  --rename "iStat Menus Menubar,com.bjango.istatmenus.network" network_alias \
+  --set network_alias icon.drawing=off \
+  label.drawing=off \
+  background.padding_right=0 \
+  background.padding_left=55 \
+  width=80 \
+  alias.color="$WHITE"
+
+sketchybar --add bracket stats temp_alias ram_alias network_alias --set stats "${stats_bracket[@]}"
