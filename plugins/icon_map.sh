@@ -161,6 +161,9 @@ function icon_map() {
   "System Preferences" | "System Settings" | "系统设置")
     icon_result=":gear:"
     ;;
+  "Ghostty")
+    icon_result=":ghostty:"
+    ;;
   "GitHub Desktop")
     icon_result=":git_hub:"
     ;;
@@ -383,9 +386,6 @@ function icon_map() {
   "Sketch")
     icon_result=":sketch:"
     ;;
-  "Steam" | "Steam Helper")
-    icon_result=":steam:"
-    ;;
   "Skype")
     icon_result=":skype:"
     ;;
@@ -400,6 +400,9 @@ function icon_map() {
     ;;
   "Spotlight")
     icon_result=":spotlight:"
+    ;;
+  "Steam")
+    icon_result=":steam:"
     ;;
   "Sublime Text")
     icon_result=":sublime_text:"
@@ -458,7 +461,7 @@ function icon_map() {
   "Vivaldi")
     icon_result=":vivaldi:"
     ;;
-  "VLC")
+  "VLC" | "Elmedia Player")
     icon_result=":vlc:"
     ;;
   "VMware Fusion")

@@ -40,8 +40,11 @@ for sid in $(aerospace list-workspaces --monitor 1 --empty no); do
 done
 
 sketchybar --add item space_separator left \
-  --set space_separator icon="" \
+  --set space_separator icon="􀆊" \
+  icon.font="$FONT:Heavy:16.0" \
   icon.padding_left=4 \
+  padding_left=10 \
+  padding_right=15 \
   label.drawing=off \
   background.drawing=off \
   script="$PLUGIN_DIR/space_windows.sh" \
