@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sketchybar --add event aerospace_workspace_change
+sketchybar --add event aerospace_update_windows
 
 for sid in $(aerospace list-workspaces --monitor 1); do
   sketchybar --add item space.$sid left \
@@ -48,4 +49,5 @@ sketchybar --add item space_separator left \
   label.drawing=off \
   background.drawing=off \
   script="$PLUGIN_DIR/space_windows.sh" \
+  --subscribe space_separator aerospace_update_windows \
   --subscribe space_separator aerospace_workspace_change
