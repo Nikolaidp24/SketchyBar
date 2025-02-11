@@ -278,7 +278,7 @@ function icon_map() {
   "Music" | "音乐")
     icon_result=":music:"
     ;;
-  "Neovide" | "neovide")
+  "neovide")
     icon_result=":neovide:"
     ;;
   "网易云音乐")
