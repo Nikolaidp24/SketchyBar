@@ -18,7 +18,6 @@ if [ $SENDER = "aerospace_update_windows" ]; then
   VISIBLE_WORKSPACE=$(aerospace list-workspaces --monitor 1 --empty no)
   for ws in $VISIBLE_WORKSPACE; do
     apps=$(aerospace list-windows --workspace "$ws" | awk -F'|' '{gsub(/^ *| *$/, "", $2); print $2}')
-    echo $apps
     sketchybar --set space.$ws drawing=on
     icons_all=" "
     if [ "${apps}" != "" ]; then
