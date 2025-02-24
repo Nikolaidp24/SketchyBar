@@ -59,6 +59,7 @@ source "$ITEM_DIR/front_app.sh"
 source "$ITEM_DIR/temp.sh"
 source "$ITEM_DIR/ram.sh"
 source "$ITEM_DIR/network.sh"
+source "$ITEM_DIR/aerospace_mode.sh"
 
 # Right
 source "$ITEM_DIR/calendar.sh"
