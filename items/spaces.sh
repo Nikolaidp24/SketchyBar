@@ -1,12 +1,9 @@
 #!/bin/bash
 
+# This script is DEPRECATED!!!
 SPACE_ICONS=("1" "2" "3" "4" "5")
 
-# Destroy space on right click, focus space on left click.
-# New space by left clicking separator (>)
-
 sid=0
-spaces=()
 for i in "${!SPACE_ICONS[@]}"; do
   sid=$(($i + 1))
 
