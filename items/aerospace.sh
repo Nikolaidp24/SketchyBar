@@ -50,4 +50,5 @@ sketchybar --add item space_separator left \
   background.drawing=off \
   script="$PLUGIN_DIR/space_windows.sh" \
   --subscribe space_separator aerospace_update_windows \
-  --subscribe space_separator aerospace_workspace_change
+  --subscribe space_separator aerospace_workspace_change \
+  --subscribe space_separator space_windows_change

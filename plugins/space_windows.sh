@@ -12,9 +12,7 @@ if [ $SENDER = "aerospace_workspace_change" ]; then
   if [ "${focused_apps}" = "" ]; then
     sketchybar --set space.$FOCUSED_WORKSPACE background.color=0x88FF00FF background.border_width=2
   fi
-fi
-
-if [ $SENDER = "aerospace_update_windows" ]; then
+else
   VISIBLE_WORKSPACE=$(aerospace list-workspaces --monitor 1 --empty no)
   ALL_WORKSPACE=$(aerospace list-workspaces --monitor 1)
   INVISIBLE_WORKSPACE=$(comm -3 <(printf "%s\n" "${VISIBLE_WORKSPACE[@]}" | sort) <(printf "%s\n" "${ALL_WORKSPACE[@]}" | sort) | sort -n)
@@ -32,6 +30,7 @@ if [ $SENDER = "aerospace_update_windows" ]; then
     sketchybar --set space.$ws label="$icons_all"
   done
   for iws in $INVISIBLE_WORKSPACE; do
+    sketchaybar --set space.$iws label=" "
     if [ $iws != $FOCUSED_WORKSPACE ]; then
       sketchybar --set space.$iws drawing=off label=""
     fi
