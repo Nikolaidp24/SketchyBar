@@ -30,8 +30,8 @@ else
     sketchybar --set space.$ws label="$icons_all"
   done
   for iws in $INVISIBLE_WORKSPACE; do
-    sketchaybar --set space.$iws label=" "
-    if [ $iws != $FOCUSED_WORKSPACE ]; then
+    sketchybar --set space.$iws label=" "
+    if [ "$iws" != "$FOCUSED_WORKSPACE" ]; then
       sketchybar --set space.$iws drawing=off label=""
     fi
   done
